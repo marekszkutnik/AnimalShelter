@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SchroniskoController">
+    <children>
+        <TableView fx:id="tableSchronisko" layoutX="39.0" layoutY="85.0" prefHeight="375.0" prefWidth="584.0">
+            <columns>
+                <TableColumn fx:id="tableColumnSchroniskoId" prefWidth="48.0" text="ID" />
+                <TableColumn fx:id="tableColumnSchroniskoNazwa" prefWidth="216.0" text="NAZWA" />
+                <TableColumn fx:id="tableColumnSchroniskoDataZalozenia" prefWidth="161.0" text="DATA ZAŁOŻENIA" />
+                <TableColumn fx:id="tableColumnSchroniskoBudzet" minWidth="5.0" prefWidth="158.0" text="BUDŻET" />
+            </columns>
+        </TableView>
+        <Button fx:id="buttonSchroniskoDodaj" layoutX="713.0" layoutY="303.0" mnemonicParsing="false" onAction="#setButtonSchroniskoDodaj" prefHeight="31.0" prefWidth="80.0" text="DODAJ" />
+        <Text fx:id="textSchroniskoTytul" layoutX="306.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zarządzaj swoim schroniskiem">
+            <font>
+                <Font name="System Bold Italic" size="27.0" />
+            </font>
+        </Text>
+        <Button fx:id="buttonSchroniskoUsun" layoutX="793.0" layoutY="303.0" mnemonicParsing="false" onAction="#setButtonSchroniskoUsun" prefHeight="31.0" prefWidth="80.0" text="USUŃ" />
+        <Button fx:id="buttonSchroniskoSzukaj" layoutX="873.0" layoutY="303.0" mnemonicParsing="false" onAction="#setButtonSchroniskoSzukaj" prefHeight="31.0" prefWidth="80.0" text="SZUKAJ" />
+        <Separator fx:id="separatorSchronisko" layoutX="661.0" layoutY="63.0" orientation="VERTICAL" prefHeight="420.0" prefWidth="6.0" />
+        <Text layoutX="605.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <Button fx:id="buttonSchroniskoOdswiez" layoutX="713.0" layoutY="334.0" mnemonicParsing="false" onAction="#setButtonSchroniskoOdswiez" prefHeight="31.0" prefWidth="120.0" text="ODŚWIEŻ" />
+        <Button fx:id="buttonSchroniskoAkualizuj" layoutX="833.0" layoutY="334.0" mnemonicParsing="false" onAction="#setButtonSchroniskoAkualizuj" prefHeight="31.0" prefWidth="120.0" text="AKTUALIZUJ" />
+      <VBox fx:id="vBoxLabelSchronisko" layoutX="691.0" layoutY="118.0" prefHeight="200.0" prefWidth="134.0" spacing="40.0">
+         <children>
+              <Label fx:id="labelSchroniskoNazwa" text="Nazwa:" />
+              <Label fx:id="labelSchroniskoDataZalozenia" text="Data Założenia:" />
+              <Label fx:id="labelSchroniskoBudzet" text="Budżet:" />
+         </children>
+      </VBox>
+      <VBox fx:id="vBoxTextFieldSchronisko" layoutX="818.0" layoutY="112.0" prefHeight="200.0" prefWidth="151.0" spacing="32.0">
+         <children>
+              <TextField fx:id="textFieldSchroniskoNazwa" prefHeight="31.0" prefWidth="161.0" />
+              <TextField fx:id="textFieldSchroniskoDataZalozenia" prefHeight="31.0" prefWidth="161.0" />
+              <TextField fx:id="textFieldSchroniskoBudzet" prefHeight="31.0" prefWidth="161.0" />
+         </children>
+      </VBox>
+      <Button fx:id="buttonSchroniskoPracownicy" layoutX="713.0" layoutY="365.0" mnemonicParsing="false" onAction="#setButtonSchroniskoPracownicy" prefHeight="31.0" prefWidth="240.0" text="PANEL PRACOWNICY" />
+      <Button fx:id="buttonSchroniskoWyloguj" layoutX="843.0" layoutY="422.0" mnemonicParsing="false" onAction="#setButtonSchroniskoWyloguj" prefHeight="45.0" prefWidth="113.0" text="WYLOGUJ" />
+    </children>
+</AnchorPane>

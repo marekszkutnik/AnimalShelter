@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KlientController">
+   <children>
+      <Text layoutX="313.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacje o kliencie" textAlignment="CENTER" wrappingWidth="285.82972717285156">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <Button fx:id="buttonKlientWyloguj" layoutX="386.0" layoutY="341.0" mnemonicParsing="false" onAction="#setButtonWyloguj" prefHeight="31.0" prefWidth="140.0" text="Wyloguj">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonKlientSpisZwierzat" layoutX="200.0" layoutY="341.0" mnemonicParsing="false" onAction="#setButtonSpisZwierzat" prefHeight="31.0" prefWidth="140.0" text="Spis Zwierząt" />
+      <VBox fx:id="vBoxTextKlient" layoutX="32.0" layoutY="80.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <Text fx:id="textKlientImie" strokeType="OUTSIDE" strokeWidth="0.0" text="Imię:" textAlignment="RIGHT" wrappingWidth="200.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="textKlientNazwisko" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwisko:" textAlignment="RIGHT" wrappingWidth="200.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="textKlientZdolnosc" strokeType="OUTSIDE" strokeWidth="0.0" text="Zdolność Adoptacyjna:" textAlignment="RIGHT" wrappingWidth="200.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="textKlientMiasto" strokeType="OUTSIDE" strokeWidth="0.0" text="Miasto:" textAlignment="RIGHT" wrappingWidth="200.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="textKlientUlica" strokeType="OUTSIDE" strokeWidth="0.0" text="Ulica:" textAlignment="RIGHT" wrappingWidth="200.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="textKlientKodPocztowy" strokeType="OUTSIDE" strokeWidth="0.0" text="Kod Pocztowy:" textAlignment="RIGHT" wrappingWidth="200.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="textKlientNumerTelefonu" strokeType="OUTSIDE" strokeWidth="0.0" text="Numer Telefonu:" textAlignment="RIGHT" wrappingWidth="200.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox fx:id="vBoxLabelKlient" layoutX="263.0" layoutY="80.0" prefHeight="240.0" prefWidth="184.0" spacing="9.0">
+         <children>
+            <Label fx:id="labelKlientImie" prefHeight="23.0" prefWidth="190.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelKlientNazwisko" prefHeight="23.0" prefWidth="190.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelKlientZdolnosc" prefHeight="23.0" prefWidth="190.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelKlientMiasto" prefHeight="23.0" prefWidth="190.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lanelKlientUlica" prefHeight="23.0" prefWidth="190.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelKlientKodPocztowy" prefHeight="23.0" prefWidth="190.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelKlientNumerTelefonu" prefHeight="15.0" prefWidth="100.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Separator layoutX="456.0" layoutY="80.0" orientation="VERTICAL" prefHeight="214.0" prefWidth="1.0" />
+      <Button fx:id="buttonKlientModyfikuj" layoutX="573.0" layoutY="341.0" mnemonicParsing="false" onAction="#setButtonKlientModyfikuj" prefHeight="31.0" prefWidth="140.0" text="Modyfikuj" />
+      <VBox fx:id="vBoxTextKlientModyfikuj" layoutX="530.0" layoutY="118.0" prefHeight="200.0" prefWidth="119.0" spacing="20.0">
+         <children>
+            <Label prefHeight="28.0" prefWidth="52.0" text="Miasto:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="28.0" prefWidth="52.0" text="Ulica:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Kod Pocztowy:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="28.0" prefWidth="116.0" text="Numer Telefonu:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="vBoxTextFieldKlientModyfikuj" layoutX="680.0" layoutY="110.0" prefHeight="200.0" prefWidth="155.0" spacing="15.0">
+         <children>
+            <TextField fx:id="textFieldKlientMiasto" />
+            <TextField fx:id="textFieldKlientUlica" />
+            <TextField fx:id="textFieldKlientKodPocztowy" />
+            <TextField fx:id="textFieldKlientNumerTelefonu" />
+         </children>
+      </VBox>
+      <Text fx:id="textKlientModyfikuj" layoutX="530.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Możliwość modyfikacji:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
